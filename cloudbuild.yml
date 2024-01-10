@@ -1,0 +1,21 @@
+# cloudbuild.yml
+
+steps:
+  # Step 1: Checkout source code
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['clone', '--recursive', 'https://github.com/your-username/your-repo.git', '.']
+
+  # Step 2: Build the Java project using Maven
+  - name: 'maven:3.6-jdk-17'
+    args: ['mvn', 'clean', 'install']
+
+  # Step 3: Deploy the application (replace with your deployment script)
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+
+# Optionally, you can define substitutions or other build configurations
+options:
+  machineType: 'N1_HIGHCPU_8'
+  substitution:
+    _PROJECT_ID: trusty-slate-405309
+    _REGION: us-south1
