@@ -10,7 +10,7 @@ steps:
     args: ['mvn', 'clean', 'install']
 
   # Step 3: Deploy the application (replace with your deployment script)
-  - name: 'gcr.io/cloud-builders/gcloud'
+  - name: 'gcr.io/gcp-code-build/gcloud'
     args: ['app', 'deploy']
 
 # Optionally, you can define substitutions or other build configurations
