@@ -20,4 +20,3 @@ options:
 # Optionally, you can define substitutions or other build configurations
 options:
   machineType: 'N1_HIGHCPU_8'
-
