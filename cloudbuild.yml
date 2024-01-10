@@ -3,7 +3,7 @@
 steps:
   # Step 1: Checkout source code
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', '--recursive', 'https://github.com/your-username/your-repo.git', '.']
+    args: ['clone', '--recursive', 'https://github.com/moshe322/java-maven-war.git', '.']
 
   # Step 2: Build the Java project using Maven
   - name: 'maven:3.6-jdk-17'
