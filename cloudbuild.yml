@@ -16,6 +16,3 @@ steps:
 # Optionally, you can define substitutions or other build configurations
 options:
   machineType: 'N1_HIGHCPU_8'
-  substitution:
-    _PROJECT_ID: trusty-slate-405309
-    _REGION: us-south1
