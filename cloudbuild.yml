@@ -12,6 +12,10 @@ steps:
   # Step 3: Deploy the application (replace with your deployment script)
   - name: 'gcr.io/gcp-code-build/gcloud'
     args: ['app', 'deploy']
+    
+  options:
+  build:
+    logsBucket: deploy-bucket
 
 # Optionally, you can define substitutions or other build configurations
 options:
